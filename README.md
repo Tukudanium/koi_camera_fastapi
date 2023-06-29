@@ -10,17 +10,6 @@ Connect 2022 in Koriyama, with UDC にて郡山市長賞を受賞した「鯉カ
 
 ## 使い方
 
-```html
-<input type="file">
-```
-
-などで取得した画像ファイルをPOSTで送信することで、変換された画像のbase64文字列が返される。  
-base64からの変換も一応実装しているが、文字列が長すぎて途中で切れてしまうので対策を考え中。
-
-## メモ
-
-デバッグ時の備忘録的メモ
-
 仮想環境起動
 
 ```powershell
@@ -42,3 +31,11 @@ uvicorn main:app --reload
 デバッグ時のswaggerURL
 
 <http://localhost:8000/docs>
+
+
+```html
+<input type="file">
+```
+
+などで取得した画像ファイルをPOSTで送信することで、変換された画像のbase64文字列が返される。  
+base64からの変換も一応実装しているが、文字列が長すぎて途中で切れてしまうので対策を考え中。
